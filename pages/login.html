@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../common-css/header.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../lib/bootstrap-4.6.1-dist/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../lib/bootstrap-4.6.1-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li class="home">首页</li>
+            <div class="unlogin">
+                <li class="goLogin">登录</li>
+                <li class="register">注册</li>
+            </div>
+            <div class="login">
+                <li class="shoppingCar">购物车</li>
+                <li class="out">退出登录</li>
+            </div>
+        </ul>
+    </header>
+    <main>
+        <form novalidate>
+            <div class="form-group">
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-person-circle"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="用户名包含中文、字母、数字6-8位"
+                        pattern="(\w|[\u4e00-\u9fa5]){5,8}$" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-key-fill"></i>
+                        </span>
+                    </div>
+                    <input type="password" class="form-control" pattern="^[A-Z]\w{8,12}$"
+                        placeholder="密码首字符大写，包含、数字、字母、下划线8-12位" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">登录</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../common-js/request.js"></script>
+    <script src="../common-js/isLogin.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

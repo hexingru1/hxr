@@ -1,0 +1,19 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.summary{
+    color: red;
+    padding: 20px;
+    border-bottom: 5px solid red;
+}
+.row th,.row td{
+  padding: 20px;
+}
+.row img{
+    width: 60px;
+}
+.total{
+    padding: 20px;
+    border-top: 2px solid gray;
+}

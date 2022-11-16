@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.kinds {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.kinds li {
+    padding: 5px 25px;
+    border-radius: 6px;
+}
+
+.kinds a {
+    color: #222;
+    text-decoration: none;
+}
+
+.kinds li:hover {
+    background-color: purple;
+}
+
+.kinds li:hover a {
+    color: white;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.container .cell {
+    margin: 10px;
+    width: calc((100% - 100px) / 5);
+    text-align: center;
+}
+
+.container .cell img {
+    width: 80%;
+}
+
+.container .cell p:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------搜索导航栏------------------------------- */
+ .search {
+    width: 385px;
+    height: 45px;
+    border: 1px solid;
+    position: relative;
+    /* right: 500px; */
+    left: 500px;
+    border-radius: 10px ;
+
+}
+
+ 
+.search>input {
+    width: 260px;
+    height: 40px;
+    /* background-color: #222; */
+    display: inline-block;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 30px;
+    top: 2px;
+}
+
+.find {
+    cursor: pointer;
+    width: 80px;
+    height: 47px;
+    text-align: center;
+    color: white;
+    background-color: hotpink;
+    border-radius: 0 10px 10px 0;
+    border-left: 2px solid;
+    line-height: 40px;
+    position: absolute;
+    left: 305px;
+    top: -1px;
+}
+
+/* -----------------------------------返回顶部按钮---------------------------- */
+
+.backtop {
+    width: 150px;
+    height: 150px;
+    border: 1px solid purple;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    position: sticky;
+    top: 300px;
+    left: 1350px;
+    right: 0;
+    bottom: 30px;
+    display: none;
+}
+
+/* -----------------------------------轮播图-------------------------------- */
+.carousel {
+    width: 1200px;
+    height: 500px;
+    border: 1px solid;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.content {
+    width: 7200px;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    left: -1200px;
+    top: 0;
+    transition: right 1s;
+    
+}
+
+.content>img {
+    width: 1200px;
+    height: 500px;
+    /* border: 1px solid red; */
+}
+
+.btns {
+    margin: 0 0px;
+    padding: 0 0px;
+    line-height: 30px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 15px);
+    color: red;
+    font-size: 25px;
+    width: 100%;
+}
+
+.btns>span:nth-child(2) {
+    float: right;
+}
+
+.btns>span:hover {
+    background-color: white;
+    color: red;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    
+}

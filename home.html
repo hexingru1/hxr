@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./common-css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <img src="http://123.57.142.211:8080/img/logo.57933597.png" alt="">
+              
+                <div class="unlogin">
+                    <li class="home">首页</li>
+                    <li class="goLogin">登录</li>
+                    <li class="register">注册</li>
+                </div>
+            <div class="login">
+                <li class="shoppingCar">购物车</li>
+                <li class="out">退出登录</li>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="请输入你想要的商品" class="button">
+                <p class="find">搜索</p>
+            </div>
+        </ul>
+
+
+    </header>
+    <!-- 一级分类菜单：从服务器获取数据并展示 -->
+    <ul class="kinds"></ul>
+
+    <!-- ---------------轮播图------------------- -->
+<div class="carousel">
+    <div class="content">
+      <!-- 
+            为了保证左滑时，最后一张图之后，第一张图能从右侧左滑出现，就需要在最后面补充第一张。
+            为了保证右滑时，第一张图之后，最后一张图能从左侧右滑出现，就要在最前面补充最后一张
+            因此，实际轮播的总张数会比用户看到的多两张。
+         -->
+
+      <img src="http://123.57.142.211:8080/img/e.3ab63941.jpg" alt="">
+
+
+      <img src="http://123.57.142.211:8080/img/a.3e445eea.jpg" alt="">
+
+
+      <img src="http://123.57.142.211:8080/img/b.0ac38d8d.jpg" alt="">
+
+
+      <img src="	http://123.57.142.211:8080/img/c.69755aed.jpg" alt="">
+
+
+      <img src="http://123.57.142.211:8080/img/e.3ab63941.jpg" alt="">
+
+
+      <img src="http://123.57.142.211:8080/img/a.3e445eea.jpg" alt="">
+
+    </div>
+    <!-- ----------左右按钮----------- -->
+    <p class="btns">
+      <span>&lt;</span>
+      <span>&gt;</span>
+    </p>
+  </div>
+
+
+
+
+    <!-- 首页商品列表 -->
+    <main class="container"></main>
+
+    <div class="backtop">返回顶部</div>
+
+
+    <!-- 
+        注意：多个js文件引入的先后问题：
+            如下，在home.js的文件中，需要使用在common文件中定义的request函数（home.js依赖于request.js文件），因此必须先引入request.js文件，保证函数的存在，再引用home.js文件。
+     -->
+    <!-- 请求API引用 -->
+    <script src="./common-js/request.js"></script>
+    <!-- 节流API引用 -->
+    <script src="./common-js/throttle.js"></script>
+    <script src="./common-js/isLogin.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

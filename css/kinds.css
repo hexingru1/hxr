@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1{
+    height: 50px;
+    width: 100%;
+}
+
+
+.kinds {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.kinds li {
+    padding: 5px 25px;
+    border-radius: 6px;
+}
+
+.kinds a {
+    color: #222;
+    text-decoration: none;
+}
+
+.kinds li:hover {
+    background-color: purple;
+}
+
+.kinds li:hover a {
+    color: white;
+}
+
+.search {
+    width: 385px;
+    height: 45px;
+    border: 1px solid;
+    position: relative;
+    /* right: 500px; */
+    left: 500px;
+}
+
+ 
+.search>input {
+    width: 300px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.find {
+    width: 80px;
+    height: 43px;
+    text-align: center;
+    color: #606266;
+    border: 1px solid;
+    line-height: 40px;
+    position: absolute;
+   
+    left: 305px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+
+.container .cell {
+    margin: 10px;
+    width: calc((100% - 100px)/5);
+}
+
+.container .cell img {
+    width: 80%;
+}
+
+.container .cellp:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+aside{
+   width: 100px;
+    position: fixed;
+    border: 1px solid;
+    left: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+aside>ul>li{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.backtop{
+    width: 200px;
+    height: 200px;
+    border: 1px solid purple;
+    background-color: purple;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    top: 550px;
+    display: none;
+    
+}
+header>span{
+    width: 70px;
+    margin-left :30px;;
+}
+

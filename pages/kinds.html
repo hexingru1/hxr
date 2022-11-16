@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../common-css/header.css">
+    <link rel="stylesheet" href="../css/kinds.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- <link rel="stylesheet" href="../css/home.css"> -->
+</head>
+<body>
+    <header>
+        <ul>
+            <img src="http://123.57.142.211:8080/img/logo.57933597.png" alt="">
+              
+                <div class="unlogin">
+                    <li class="home">首页</li>
+                    <li class="goLogin">登录</li>
+                    <li class="register">注册</li>
+                </div>
+            <div class="login">
+                <li class="shoppingCar">购物车</li>
+                <li class="out">退出登录</li>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="请输入你想要的商品">
+                <p class="find">搜索</p>
+            </div>
+        </ul>
+    </header>
+    <!-- -----一级分类---------------- -->
+
+    <ul class="kinds"></ul>
+    <!-- --------------二级分类-------------- -->
+    <aside>
+        <ul class="typeTwo">
+
+        </ul>
+    </aside>
+    <!-- ----------------------二级分类相关数据------------- -->
+    <main class="container">
+
+    </main>
+
+    <div class="backtop">返回顶部</div>
+
+    <script src="../common-js/request.js"></script>
+    <script src="../common-js/throttle.js"></script>
+    <script src="../common-js/isLogin.js"></script>
+    <script src="../js/kinds.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/home.js"></script>
+   
+</body>
+
+</html>
